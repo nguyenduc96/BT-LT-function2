@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 9</title>
+</head>
+<body>
+<script>
+    function checkCharacter(array, character) {
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === character) {
+                count++;
+            }
+        }
+        if (count === 0) {
+            return -1;
+        }
+        return count;
+    }
+    let number = parseInt(prompt("Nhập vào độ dài của mảng : "));
+    let array = [];
+    for (let i = 0; i < number; i++) {
+        array[i] = prompt("Nhập phần tử thứ : " + i);
+    }
+    let character = prompt("Nhập vào kí tự để kiểm tra");
+    let result = checkCharacter(array, character);
+    document.write("Số lần xuất hiện của " + character + " là : " + result);
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 3</title>
+</head>
+<body>
+<input type="number" id="input" placeholder="Nhập số"
+        onchange="tinhGt()" oninput="tinhGt()">
+<p id="output"></p>
+<script>
+    function tinhGiaithua(a){
+        if (a==2)
+          return 2;
+        return a * tinhGiaithua(a-1)
+    }
+    function tinhGt(){
+        let a = document.getElementById('input').value;
+        document.getElementById('output').innerHTML = "Giai thừa của " + a + " = " + tinhGiaithua(a);
+    }
+</script>
+</body>
+</html>

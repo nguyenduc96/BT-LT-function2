@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 5</title>
+</head>
+<body>
+<p id="output"></p>
+<script>
+    function timMin(a, b, c){
+        let min = a;
+        if (min > b){
+            min = b;
+            if (min > c){
+                min = c;
+            }
+        }
+        return min;
+    }
+    let a = parseInt(prompt("Nhập số a : "));
+    let b = parseInt(prompt("Nhập số b : "));
+    let c = parseInt(prompt("Nhập số c : "));
+    document.write('Giá trị nhỏ nhất = ' + timMin(a, b, c));
+</script>
+</body>
+</html>

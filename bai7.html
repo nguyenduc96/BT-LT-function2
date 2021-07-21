@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 7</title>
+</head>
+<body>
+
+<script>
+
+    function  changInteger(a, b){
+      let arr = [];
+        let c = a;
+        a = b;
+        arr.push(a);
+        b = c;
+        arr.push(b);
+        return arr;
+    }
+    let num  =  prompt('nhap so a');
+    let num2 = prompt('nhap so b');
+    document.write(changInteger(num, num2));
+</script>
+</body>
+</html>

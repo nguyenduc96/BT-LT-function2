@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 1</title>
+</head>
+<body>
+<input type="number" id="input" placeholder="Nhập số cần tính bình phương"
+       oninput="tinhSquare()" onchange="tinhSquare()">
+<p id="output"></p>
+<script>
+    function sQuare(number){
+        let square = number*number;
+        return square;
+    }
+    function tinhSquare(){
+        let number =  document.getElementById('input').value;
+        document.getElementById('output').innerHTML= "Bình phương = " + sQuare(number);
+    }
+</script>
+</body>
+</html>
